@@ -1,0 +1,16 @@
+
+
+.goals__form input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 5px;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(197, 196, 196, 0.986);
+    margin-bottom: 8px;
+}
+
+.goals__form input::placeholder{
+    font-size: 18px;
+    color: black;
+}

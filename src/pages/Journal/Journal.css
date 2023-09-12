@@ -1,0 +1,102 @@
+
+
+.journal{
+    display: flex;
+    padding: 50px;
+    /* gap: 50px; */
+}
+
+.journal__left{
+    flex: 1;
+    border-right: 1px solid rgb(8, 146, 100);;
+}
+.journal__left h1{
+    text-align: center;
+    color: brown;
+}
+
+.journal__left form{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.journal__left form textarea{
+    border: 1px solid rgb(216, 216, 216);
+    outline: none;
+    padding: 10px;
+}
+
+.journal__left button{
+    background-color: rgb(8, 146, 100);
+    color: white;
+    border-radius: 1rem;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    padding: 8px 15px;
+    display: block;
+    width: 20%;
+    margin: 0 auto;
+}
+
+
+
+
+/* right  */
+.journal__right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.journal__right h1{
+    color: brown;
+    text-align: center;
+}
+
+.journal__right-items{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.journal__right-items a{
+    background-color: white;
+    box-shadow: 0px 0px 23px -5px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.journal__right-items h3{
+    color: darkcyan;
+}
+
+.journal__right-items p{
+    color: rgb(189, 189, 189);
+    margin-top: 10px;
+}
+
+
+@media screen and (max-width: 700px) {
+    .journal{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .journal__left{
+        border: none;
+    }
+    .journal__left button{
+        width: 100%;
+    }
+    .journal__left textarea{
+        width: 100%;
+    }
+}
